@@ -27,13 +27,14 @@
         <Cover v-for="(item,index) in commendList"  :key="index" :detailItem = "item"
         class="detailItem"/>
     </div>
-    
+    <Comment/>
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/common/Navbar";
 import Cover from "./Cover";
+import Comment from "@/components/article/Comment";
 export default {
   data() {
     return {
@@ -87,7 +88,7 @@ export default {
   components: {
     Navbar,
     Cover,
- 
+    Comment
     
   },
 };
